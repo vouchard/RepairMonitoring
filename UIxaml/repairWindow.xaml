@@ -1,0 +1,27 @@
+<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication8"
+       
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,0,2,-3" Background="#FFF9F9F9">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Content="1000000215" Height="49" Margin="5,10,235,1" Width="275" Background="#FF44FBE2" FontSize="21.333" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textBox_NG_part" HorizontalAlignment="Center" Height="30" Margin="107,68,248,-34" TextWrapping="Wrap" Text="C101XXXXX" VerticalAlignment="Center" Width="160" FontSize="18.667" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" HorizontalContentAlignment="Center"/>
+        <Label x:Name="label1" Content="NG PART:" HorizontalAlignment="Left" Height="32" Margin="10,66,0,-35" VerticalAlignment="Top" Width="92" FontSize="16" HorizontalContentAlignment="Right" RenderTransformOrigin="0.293,0.531"/>
+        <Label x:Name="label1_Copy" Content="DEFECT:" HorizontalAlignment="Left" Height="32" Margin="23,121,0,-78" VerticalAlignment="Top" Width="90" FontSize="16" RenderTransformOrigin="0.467,2.156"/>
+        <TextBox x:Name="textBox_defect" HorizontalAlignment="Center" Height="30" Margin="107,118,248,-79" TextWrapping="Wrap" Text="NOSolderXXXX" VerticalAlignment="Center" Width="160" FontSize="18.667" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" HorizontalContentAlignment="Center"/>
+        <Button x:Name="button_visual" Content="VISUAL NG" HorizontalAlignment="Left" Height="35" Margin="23,265,0,-257" VerticalAlignment="Top" Width="215" Background="#FF46E03E" FontWeight="Bold"/>
+        <Button x:Name="button_htoi" Content="HARD TO INVESTIGATE" HorizontalAlignment="Left" Height="35" Margin="265,265,0,-267" VerticalAlignment="Top" Width="215" Background="#FFD1716D"/>
+        <ListView x:Name="listView_df" HorizontalAlignment="Left" Height="250" Margin="285,10,0,-198" VerticalAlignment="Top" Width="195">
+        </ListView>
+        <Label x:Name="label1_FCTStep" Content="Step No:" HorizontalAlignment="Left" Height="32" Margin="23,170,0,-128" VerticalAlignment="Top" Width="90" FontSize="16" RenderTransformOrigin="0.467,2.156"/>
+        <TextBox x:Name="StepNo" HorizontalAlignment="Center" Height="30" Margin="107,172,248,-129" TextWrapping="Wrap" Text="Na" VerticalAlignment="Center" Width="160" FontSize="18.667" VerticalContentAlignment="Center" SelectionBrush="{x:Null}" HorizontalContentAlignment="Center"/>
+
+    </Grid>
+</Window>
+    

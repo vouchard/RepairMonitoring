@@ -1,0 +1,20 @@
+<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication10"
+      
+        Title="MainWindow" Height="432" Width="699">
+    <Grid>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="25" Margin="105,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" FontSize="16"/>
+        <Label x:Name="label" Content="Step No:" HorizontalAlignment="Left" Height="30" Margin="30,25,0,0" VerticalAlignment="Top" Width="70" FontSize="16"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="285" Margin="30,75,0,0" VerticalAlignment="Top" Width="610">
+		<DataGrid.Columns>
+                <DataGridTextColumn Binding = "{Binding MODEL}" Header = "MODEL" Width="150"/>
+                <DataGridTextColumn Binding = "{Binding NG_PART}" Header = "NG_PART" Width="150"/>
+                <DataGridTextColumn Binding = "{Binding NG_TYPE}" Header = "NG_TYPE" Width="150"/>
+            </DataGrid.Columns>
+	</DataGrid>
+    </Grid>
+</Window>

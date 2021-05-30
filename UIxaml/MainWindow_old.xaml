@@ -1,0 +1,59 @@
+﻿<Window 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+
+        Title="MainWindow" Height="700" Width="1000">
+    <Window.Resources>
+        <SolidColorBrush x:Key="Font_color_a" Color="#FF002B87"/>
+        <Color x:Key="border_color_a">#FF098915</Color>
+    </Window.Resources>
+    <Grid Background="#FF7FAAEA">
+        <Border BorderBrush="{DynamicResource Font_color_a}" BorderThickness="3" HorizontalAlignment="Left" Height="240" Margin="670,130,0,0" VerticalAlignment="Top" Width="295"/>
+        <Label x:Name="Title" Content="REPAIR MONITORING" HorizontalAlignment="Left" Height="52" Margin="14,9,0,0" VerticalAlignment="Top" Width="464" RenderTransformOrigin="0.45,0.081" FontSize="29.333" FontWeight="Bold" Foreground="{DynamicResource Font_color_a}"/>
+        <DataGrid x:Name="dataGrid_units" HorizontalAlignment="Left" Height="500" Margin="30,115,0,0" VerticalAlignment="Top" Width="618" ColumnHeaderHeight="30" SelectionMode="Single" AlternationCount="1" AutoGenerateColumns="False" CanUserReorderColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding = "{Binding DateEndorsed}" Header = "DateEndorsed" Width="150"/>
+                <DataGridTextColumn Binding = "{Binding Barcode}" Header = "Barcode" Width="150"/>
+                <DataGridTextColumn Binding = "{Binding Model}" Header = "Model" Width="150"/>
+                <DataGridTextColumn Binding = "{Binding EndorsedBy}"  Header = "Endorsedby" Width="80"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="dataGrid_forRepair" HorizontalAlignment="Left" Margin="675,170,0,0" VerticalAlignment="Top" Height="196" Width="285"/>
+        <Label x:Name="Title_Copy" Content="000" HorizontalAlignment="Center" Height="45" Margin="797,125,37,499" VerticalAlignment="Center" Width="158" RenderTransformOrigin="0.45,0.081" FontSize="29.333" FontWeight="Bold" Foreground="#FF002B87"/>
+        <Border BorderBrush="{DynamicResource Font_color_a}" BorderThickness="3" HorizontalAlignment="Left" Height="545" Margin="30,70,0,0" VerticalAlignment="Top" Width="618">
+            <TextBox x:Name="textbox_bcd" HorizontalAlignment="Center" Height="20" Margin="467,12,0,0" TextWrapping="Wrap" Text="0000000" VerticalAlignment="Top" Width="130"/>
+        </Border>
+        <Label x:Name="Title_Copy1" Content="For Repair:" HorizontalAlignment="Center" Height="45" Margin="675,130,195,494" VerticalAlignment="Center" Width="122" RenderTransformOrigin="0.533,5.978" FontSize="20" FontWeight="Bold" Foreground="#FF002B87"/>
+        <DataGrid x:Name="dataGrid_repairCount" HorizontalAlignment="Left" Margin="675,421,0,0" VerticalAlignment="Top" Height="183" Width="285"/>
+        <Label x:Name="Title_Copy2" Content="Repaired Units" HorizontalAlignment="Center" Height="45" Margin="675,340,32,184" VerticalAlignment="Center" Width="285" RenderTransformOrigin="0.533,5.978" FontSize="20" FontWeight="Bold" Foreground="#FF002B87"/>
+        <Label x:Name="label" Content="For Repair Units" HorizontalAlignment="Left" Height="49" Margin="30,70,0,0" VerticalAlignment="Top" Width="220" BorderThickness="2" Background="{x:Null}" FontSize="21.333" FontWeight="Bold" Foreground="{DynamicResource Font_color_a}"/>
+        <Border BorderThickness="3" HorizontalAlignment="Left" Height="214" Margin="670,390,0,0" VerticalAlignment="Top" Width="295" BorderBrush="{DynamicResource Font_color_a}"/>
+        <Button x:Name="Add_Units" Content="ADD UNITS" HorizontalAlignment="Left" Height="44" Margin="670,75,0,0" VerticalAlignment="Top" Width="92" Background="#FF38C7B4">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF131111" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="Add_Units_Copy" Content="NG REFERENCE" HorizontalAlignment="Left" Height="44" Margin="767,75,0,0" VerticalAlignment="Top" Width="88" Background="#FF38C7B4" RenderTransformOrigin="1.175,0.769">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF131111" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+        <Button x:Name="Add_Units_Copy1" Content="COMPONENT&#xD;&#xA;FINDER" HorizontalAlignment="Left" Height="44" Margin="860,75,0,0" VerticalAlignment="Top" Width="88" Background="#FF38C7B4" RenderTransformOrigin="1.175,0.769">
+            <Button.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF131111" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+    </Grid>
+</Window>

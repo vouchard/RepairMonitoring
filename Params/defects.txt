@@ -1,0 +1,10 @@
+No Solder
+Bridge
+Offset
+No Connection
+Missing
+Detach
+Lifted
+Damaged
+Cut Pattern
+No Lead Out
